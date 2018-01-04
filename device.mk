@@ -24,16 +24,9 @@
 
 $(call inherit-product, vendor/oneplus/cheeseburger/cheeseburger-vendor.mk)
 
-# Overlays - no extra ones needed, common handles all we need
-#DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_CONFIG := xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
