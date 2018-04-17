@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The Dirty Unicorns Project
+# Copyright (C) 2017-2018 The Dirty Unicorns Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ PRODUCT_NAME := du_cheeseburger
 PRODUCT_DEVICE := cheeseburger
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := ONEPLUS A5000
+PRODUCT_MODEL := OnePlus 5 (A5000)
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
@@ -42,7 +42,7 @@ TARGET_VENDOR_DEVICE_NAME := OnePlus5
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus5 PRODUCT_NAME=OnePlus5
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:8.0.0/OPR6.170623.013/12140945:user/release-keys \
-    PRIVATE_BUILD_DESC="OnePlus5-user 8.0.0 OPR6.170623.013 57 release-keys"
+    BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:8.1.0/OPM1.171019.011/04110400:user/release-keys \
+    PRIVATE_BUILD_DESC="OnePlus5-user 8.1.0 OPM1.171019.011 1 release-keys"
 
 TARGET_VENDOR := oneplus
