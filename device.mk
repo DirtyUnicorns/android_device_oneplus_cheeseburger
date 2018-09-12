@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Open Source Project
+# Copyright (C) 2017-2018 The Dirty Unicorns Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ $(call inherit-product, vendor/oneplus/cheeseburger/cheeseburger-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_CONFIG := xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
@@ -42,3 +42,4 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from oneplus msm8998-common
 $(call inherit-product, device/oneplus/msm8998-common/common.mk)
+$(call inherit-product, device/oneplus/msm8998-common/permissions.mk)

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Open Source Project
+# Copyright (C) 2017-2018 The Dirty Unicorns Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,10 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cheeseburger device
 $(call inherit-product, device/oneplus/cheeseburger/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DU stuff.
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_cheeseburger
+PRODUCT_NAME := du_cheeseburger
 PRODUCT_DEVICE := cheeseburger
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -34,6 +34,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 TARGET_VENDOR_PRODUCT_NAME := OnePlus5
 TARGET_VENDOR_DEVICE_NAME := OnePlus5
+TARGET_VENDOR := oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus5 PRODUCT_NAME=OnePlus5
 
@@ -41,5 +42,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="OnePlus5-user 9 PKQ1.180716.001 1812232046 release-keys"
 
 BUILD_FINGERPRINT := OnePlus/OnePlus5/OnePlus5:9/PKQ1.180716.001/1812232046:user/release-keys
-
-TARGET_VENDOR := oneplus
